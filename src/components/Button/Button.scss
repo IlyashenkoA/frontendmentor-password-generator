@@ -1,0 +1,33 @@
+.generator__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  width: 100%;
+  padding: 1rem;
+  border: 0.125rem solid var(--neon-green);
+  background-color: var(--neon-green);
+  font-size: var(--fs-medium);
+  color: var(--primary-dark-grey);
+  text-transform: uppercase;
+  transition: 0.3s;
+
+  cursor: pointer;
+
+  svg {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: transparent;
+      color: var(--neon-green);
+
+      svg path {
+        fill: var(--neon-green);
+      }
+    }
+  }
+}
