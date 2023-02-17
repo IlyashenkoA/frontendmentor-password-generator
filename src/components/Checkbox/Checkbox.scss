@@ -10,6 +10,11 @@
         border-color: var(--neon-green);
       }
     }
+
+    padding-top: 0.125rem;
+    padding-left: 2.25rem;
+    color: var(--almost-white);
+    font-size: var(--fs-body-medium);
   }
 
   &__input {
@@ -27,14 +32,6 @@
         opacity: 1;
       }
     }
-  }
-
-  &__label {
-    padding-left: 2.25rem;
-    color: var(--almost-white);
-    font-size: var(--fs-body-medium);
-    line-height: 1.5rem;
-    cursor: pointer;
   }
 
   &__checkmark {
