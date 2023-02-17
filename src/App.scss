@@ -5,6 +5,7 @@
     align-items: center;
     gap: 1.25rem;
 
+    width: clamp(28rem, 70%, 38.5rem);
     min-width: 28rem;
     max-width: 38.5rem;
 
