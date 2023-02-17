@@ -1,14 +1,14 @@
 import { ChangeEvent } from 'react';
 import './Checkbox.scss';
 
-export const Checkbox: React.FC<{ label: string; onChange: (e: ChangeEvent<HTMLInputElement>) => void; }> = ({ label, onChange }) => {
+export const Checkbox: React.FC<{ label: string; id: string; onChange: (e: ChangeEvent<HTMLInputElement>) => void; }> = ({ label, id, onChange }) => {
   return (
     <label className="checkbox__container">
-      <label className="checkbox__label" htmlFor={label}>
+      <label className="checkbox__label" htmlFor={id}>
         {label}
       </label>
       <input
-        id={label}
+        id={id}
         className="checkbox__input"
         type="checkbox"
         onChange={onChange}

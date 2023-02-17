@@ -180,6 +180,7 @@ const App = () => {
                 <Checkbox
                   key={include.type}
                   label={include.label}
+                  id={include.type}
                   onChange={(e) =>
                     setPasswordInclude({
                       ...passwordInclude,
