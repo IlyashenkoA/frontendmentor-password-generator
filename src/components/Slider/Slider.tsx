@@ -19,7 +19,14 @@ export const Slider = ({ passwordLength, onChange }: ISliderProps) => {
         min='0'
         max='20'
         value={passwordLength}
-        onChange={(e) => onChange(+e.target.value)}
+        onChange={(e) => {
+          const progressBar =
+            ((+e.target.value - +e.target.min)
+              / (+e.target.max - +e.target.min)) * 100;
+
+          document.documentElement.style.setProperty('--progress-bar-percent', `${progressBar}%`);
+          onChange(+e.target.value);
+        }}
       />
     </div>
   );

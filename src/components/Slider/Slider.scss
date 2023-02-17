@@ -1,16 +1,3 @@
-$slider-width-number: 600;
-$slider-width: #{$slider-width-number}rem;
-
-@function makeProgressBar($color, $size) {
-  $val: 0.3125rem 0 0 $size $color;
-
-  @for $i from 6 through $slider-width-number {
-    $val: #{$val}, #{$i}px 0 0 $size #{$color};
-  }
-
-  @return $val;
-}
-
 .password {
   &__slider {
     -webkit-appearance: none;
@@ -48,86 +35,101 @@ $slider-width: #{$slider-width-number}rem;
   }
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
-  background: var(--neon-green);
-  height: 0.5rem; /*trackHeight*/
-  transition: 0.3s;
-}
+input[type="range"] {
+  &::-webkit-slider-runnable-track {
+    background-image: linear-gradient(
+      90deg,
+      var(--neon-green) var(--progress-bar-percent),
+      var(--secondary-dark-grey) var(--progress-bar-percent)
+    );
+    height: 0.5rem; /*trackHeight*/
+    transition: 0.3s;
+  }
 
-input[type="range"]::-moz-range-track {
-  background: var(--secondary-dark-grey);
-  height: 0.5rem; /*trackHeight*/
-  transition: 0.3s;
-}
+  &::-moz-range-track {
+    background-image: linear-gradient(
+      90deg,
+      var(--neon-green) var(--progress-bar-percent),
+      var(--secondary-dark-grey) var(--progress-bar-percent)
+    );
+    height: 0.5rem; /*trackHeight*/
+    transition: 0.3s;
+  }
 
-input[type="range"]::-ms-track {
-  background: var(--neon-green);
-  height: 0.5rem; /*trackHeight*/
-  transition: 0.3s;
-}
+  &::-ms-track {
+    background-image: linear-gradient(
+      90deg,
+      var(--neon-green) var(--progress-bar-percent),
+      var(--secondary-dark-grey) var(--progress-bar-percent)
+    );
+    height: 0.5rem; /*trackHeight*/
+    transition: 0.3s;
+  }
 
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 1.75rem;
-  height: 1.75rem;
-  border: 0.125rem solid var(--almost-white); /*border-width should be equal to thumbBorderWidth if you want same border width across all browsers and border-color should match the background*/
-  border-radius: 50%;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 0.125rem solid var(--almost-white); /*border-width should be equal to thumbBorderWidth if you want same border width across all browsers and border-color should match the background*/
+    border-radius: 50%;
 
-  box-shadow: makeProgressBar(var(--secondary-dark-grey), -0.6rem);
-  background: var(--almost-white);
-  margin-top: -0.625rem; /* -[thumbHeight + (2 x thumbBorderWidth) - trackHeight]/2*/
+    background: var(--almost-white);
+    margin-top: -0.625rem; /* -[thumbHeight + (2 x thumbBorderWidth) - trackHeight]/2*/
 
-  transition: 0.3s;
-  cursor: pointer;
-}
+    transition: 0.3s;
+    cursor: pointer;
+  }
 
-input[type="range"]::-moz-range-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 1.75rem;
-  height: 1.75rem;
-  border: 0.125rem solid var(--almost-white); /*border-width should be equal to thumbBorderWidth if you want same border width across all browsers and border-color should match the background*/
-  border-radius: 50%;
+  &::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 0.125rem solid var(--almost-white); /*border-width should be equal to thumbBorderWidth if you want same border width across all browsers and border-color should match the background*/
+    border-radius: 50%;
 
-  background: var(--almost-white);
-  margin-top: -0.625rem; /* -[thumbHeight + (2 x thumbBorderWidth) - trackHeight]/2*/
+    background: var(--almost-white);
+    margin-top: -0.625rem; /* -[thumbHeight + (2 x thumbBorderWidth) - trackHeight]/2*/
 
-  transition: 0.3s;
-  cursor: pointer;
-}
+    transition: 0.3s;
+    cursor: pointer;
+  }
 
-input[type="range"]::-ms-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 1.75rem;
-  height: 1.75rem;
-  border: 0.125rem solid var(--almost-white); /*border-width should be equal to thumbBorderWidth if you want same border width across all browsers and border-color should match the background*/
-  border-radius: 50%;
+  &::-ms-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 0.125rem solid var(--almost-white); /*border-width should be equal to thumbBorderWidth if you want same border width across all browsers and border-color should match the background*/
+    border-radius: 50%;
 
-  background: var(--almost-white);
-  margin-top: -0.625rem; /* -[thumbHeight + (2 x thumbBorderWidth) - trackHeight]/2*/
+    background: var(--almost-white);
+    margin-top: -0.625rem; /* -[thumbHeight + (2 x thumbBorderWidth) - trackHeight]/2*/
 
-  transition: 0.3s;
-  cursor: pointer;
-}
+    transition: 0.3s;
+    cursor: pointer;
+  }
 
-input[type="range"]:hover::-webkit-slider-thumb {
-  background: var(--secondary-dark-grey);
-  border-color: var(--neon-green);
-}
+  &::-moz-range-progress {
+    height: 0.5rem;
+    background-color: var(--neon-green);
+  }
 
-input[type="range"]:hover::-moz-range-thumb {
-  background: var(--secondary-dark-grey);
-  border-color: var(--neon-green);
-}
+  &:hover {
+    &::-ms-thumb {
+      background: var(--secondary-dark-grey);
+      border-color: var(--neon-green);
+    }
 
-input[type="range"]:hover::-ms-thumb {
-  background: var(--secondary-dark-grey);
-  border-color: var(--neon-green);
-}
+    &::-moz-range-thumb {
+      background: var(--secondary-dark-grey);
+      border-color: var(--neon-green);
+    }
 
-input[type="range"]::-moz-range-progress {
-  height: 0.5rem;
-  background-color: var(--neon-green);
+    &::-webkit-slider-thumb {
+      background: var(--secondary-dark-grey);
+      border-color: var(--neon-green);
+    }
+  }
 }

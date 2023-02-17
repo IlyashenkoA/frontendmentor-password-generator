@@ -370,6 +370,8 @@ template {
   --fs-small: 1.125rem;
 
   --fs-default: 1rem;
+
+  --progress-bar-percent: 0%;
 }
 
 body {
