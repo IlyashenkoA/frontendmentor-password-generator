@@ -5,7 +5,7 @@
     align-items: center;
     gap: 1.25rem;
 
-    min-width: 30.5rem;
+    min-width: 28rem;
     max-width: 38.5rem;
 
     margin-inline: auto;
@@ -17,7 +17,7 @@
 
     &-title {
       color: var(--grey);
-      font-size: (--fs-medium);
+      font-size: (--fs-heading-medium);
       text-align: center;
     }
 
@@ -37,7 +37,7 @@
         &__text {
           margin: 0;
           color: var(--almost-white);
-          font-size: var(--fs-large);
+          font-size: var(--fs-heading-large);
           word-break: break-all;
 
           &.hidden {
@@ -47,12 +47,13 @@
 
         &__copy {
           display: inline-flex;
+          align-items: center;
           gap: 1rem;
 
           &-text {
             margin: 0;
             color: var(--neon-green);
-            font-size: var(--fs-medium);
+            font-size: var(--fs-body-medium);
             text-transform: uppercase;
             opacity: 0;
             transition: 0.3s;
@@ -96,7 +97,7 @@
 
       h2 {
         margin: 0;
-        font-size: var(--fs-medium);
+        font-size: var(--fs-body-medium);
         color: var(--grey);
         text-transform: uppercase;
       }
@@ -110,7 +111,7 @@
         &-text {
           margin: 0;
           color: var(--almost-white);
-          font-size: var(--fs-medium);
+          font-size: var(--fs-heading-medium);
           text-transform: uppercase;
 
           padding-right: 0.5rem;

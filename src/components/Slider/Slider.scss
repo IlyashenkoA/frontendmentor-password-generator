@@ -18,13 +18,13 @@
     height: 5.4375rem;
 
     &-text {
-      font-size: var(--fs-large);
+      font-size: var(--fs-heading-large);
       color: var(--neon-green);
     }
   }
 
   &__label {
-    font-size: var(--fs-small);
+    font-size: var(--fs-body-medium);
     color: var(--almost-white);
   }
 

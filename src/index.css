@@ -365,9 +365,9 @@ template {
   --secondary-dark-grey: #18171f;
 
   --primary-ff: "JetBrains Mono", monospace;
-  --fs-large: 2rem;
-  --fs-medium: 1.5rem;
-  --fs-small: 1.125rem;
+  --fs-heading-large: 2rem;
+  --fs-heading-medium: 1.5rem;
+  --fs-body-medium: 1.125rem;
 
   --fs-default: 1rem;
 

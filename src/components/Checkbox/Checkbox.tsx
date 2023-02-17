@@ -7,7 +7,6 @@ export const Checkbox: React.FC<{ label: string; onChange: (e: ChangeEvent<HTMLI
       <label className="checkbox__label" htmlFor={label}>
         {label}
       </label>
-
       <input
         id={label}
         className="checkbox__input"
