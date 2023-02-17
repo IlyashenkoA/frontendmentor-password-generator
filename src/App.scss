@@ -16,8 +16,9 @@
     }
 
     &-title {
+      margin: 0;
       color: var(--grey);
-      font-size: (--fs-heading-medium);
+      font-size: var(--fs-heading-medium);
       text-align: center;
     }
 
