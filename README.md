@@ -1,2 +1,2 @@
 # DEMO
-https://vercel.com/ilyashenkoa/frontendmentor-password-generator
+https://frontendmentor-password-generator.vercel.app/
