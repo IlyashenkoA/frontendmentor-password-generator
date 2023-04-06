@@ -1,76 +1,19 @@
 import { passwordStrength } from 'check-password-strength';
 import { generate } from 'generate-password-browser';
 import { useEffect, useState } from 'react';
-import './App.scss';
-import { Button } from './components/Button/Button';
-import { Checkbox } from './components/Checkbox/Checkbox';
-import { Slider } from './components/Slider/Slider';
 
-const passwordIncludes = [
-  {
-    label: 'Include Uppercase Letters',
-    type: 'upperCase',
+import { Button } from '../../components/Button/Button';
+import { Checkbox } from '../../components/Checkbox/Checkbox';
+import { Slider } from '../../components/Slider/Slider';
 
-  }, {
-    label: 'Include Lowercase Letters',
-    type: 'lowerCase',
+import { DEFAULT_OPTIONS, PASSWORD_INCLUDES, STRENGTH_INDICATOR } from './PasswordGenerator.config';
 
-  }, {
-    label: 'Include Numbers',
-    type: 'numbers',
+import './PasswordGenerator.scss';
 
-  }, {
-    label: 'Include Symbols',
-    type: 'symbols',
-  }
-];
-
-const defaultOptions = [
-  {
-    id: 0,
-    value: "Too weak!",
-    length: 1
-  },
-  {
-    id: 1,
-    value: "Weak",
-    length: 2
-  },
-  {
-    id: 2,
-    value: "Medium",
-    length: 3
-  },
-  {
-    id: 3,
-    value: "Strong",
-    length: 4
-  }
-];
-
-const strengthIndicator: { [key: string]: { length: number, class: string; }; } = {
-  'Too weak!': {
-    length: 1,
-    class: 'too-weak'
-  },
-  'Weak': {
-    length: 2,
-    class: 'weak'
-  },
-  'Medium': {
-    length: 3,
-    class: 'medium'
-  },
-  'Strong': {
-    length: 4,
-    class: 'strong'
-  },
-};
-
-const App = () => {
+export const PasswordGenerator = () => {
   const [passwordLength, setPasswordLength] = useState<number>(0);
   const [passwordInclude, setPasswordInclude] = useState<Record<string, boolean>>(
-    passwordIncludes.reduce((obj, include) => ({ ...obj, [include.type]: false }), {})
+    PASSWORD_INCLUDES.reduce((obj, include) => ({ ...obj, [include.type]: false }), {})
   );
   const [password, setPassword] = useState<string>('');
   const [passwordStrengthIndicator, setPasswordStrengthIndicator] = useState<string>('');
@@ -144,7 +87,7 @@ const App = () => {
       <div>
         <div className="password__generator-result">
           <h1 className={
-            `result__text 
+            `result__text
             ${password === '' || Object.values(passwordInclude).every((include) => include === false)
               ? 'hidden'
               : ''}`
@@ -175,7 +118,7 @@ const App = () => {
             onChange={setPasswordLength}
           />
           <fieldset className="password__include">
-            {passwordIncludes.map((include) => {
+            {PASSWORD_INCLUDES.map((include) => {
               return (
                 <Checkbox
                   key={include.type}
@@ -197,9 +140,9 @@ const App = () => {
               <h2 className='strength__indicator-text'>
                 {password.length > 0 && passwordStrengthIndicator}
               </h2>
-              {defaultOptions.map((item) => {
+              {DEFAULT_OPTIONS.map((item) => {
                 if (password === ''
-                  || item.id >= strengthIndicator[passwordStrengthIndicator]?.length
+                  || item.id >= STRENGTH_INDICATOR[passwordStrengthIndicator]?.length
                 ) {
                   return (
                     <span key={item.id}></span>
@@ -208,7 +151,7 @@ const App = () => {
 
                 return (
                   <span
-                    className={`${strengthIndicator[passwordStrengthIndicator]?.class}`}
+                    className={`${STRENGTH_INDICATOR[passwordStrengthIndicator]?.class}`}
                     key={item.id}>
                   </span>
                 );
@@ -221,5 +164,3 @@ const App = () => {
     </div>
   );
 };
-
-export default App;
