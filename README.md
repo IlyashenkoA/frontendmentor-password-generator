@@ -43,7 +43,7 @@ Password generator, where it is possible to choose the length of the password up
 1. Clone the frontend repository
 
 ```
-git clone https://github.com/IlyashenkoA/frontendmentor-password-generator/
+git clone https://github.com/IlyashenkoA/frontendmentor-password-generator.git
 ```
 
 2. Install all packages
