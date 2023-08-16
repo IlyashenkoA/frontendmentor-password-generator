@@ -15,15 +15,15 @@ Introducing our cutting-edge Password Generator - a robust tool designed to fort
 
 ### Features:
 
-Customizable Length: Craft passwords of varying lengths, catering to your unique security preferences. Whether you seek a concise key or an elaborate passphrase, we've got you covered, with the upper limit set at 20 characters.
+* <b>Customizable Length:</b> Craft passwords of varying lengths, catering to your unique security preferences. Whether you seek a concise key or an elaborate passphrase, we've got you covered, with the upper limit set at 20 characters.
 
-Comprehensive Character Set: Empower your passwords with layers of complexity. Handpick the elements you need, from digits and symbols to uppercase and lowercase letters, creating a robust cryptographic shield.
+* <b>Comprehensive Character Set:</b> Empower your passwords with layers of complexity. Handpick the elements you need, from digits and symbols to uppercase and lowercase letters, creating a robust cryptographic shield.
 
-Password Strength Gauge: Visualize the potency of your password in real time with our intuitive strength indicator. Gauge security levels instantly, allowing you to fine-tune your password until it's truly impervious.
+* <b>Password Strength Gauge:</b> Visualize the potency of your password in real-time with our intuitive strength indicator. Gauge security levels instantly, allowing you to fine-tune your password until it's truly impervious.
 
-Effortless Copy to Clipboard: Seamlessly copy your freshly minted password to the clipboard with a single click. No more tedious typing or retyping—our generator ensures quick access for immediate use.
+* <b>Effortless Copy to Clipboard:</b> Seamlessly copy your freshly minted password to the clipboard with a single click. No more tedious typing or retyping—our generator ensures quick access for immediate use.
 
-Enhanced Security: Elevate your defense against cyber threats, safeguarding your online accounts with the robust and unpredictable passwords generated through our state-of-the-art algorithm.
+* <b>Enhanced Security:</b> Elevate your defense against cyber threats, safeguarding your online accounts with the robust and unpredictable passwords generated through our state-of-the-art algorithm.
 
 ## Built With
 
