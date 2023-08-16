@@ -1,38 +1,35 @@
 <br/>
 <p align="center">
-  <h3 align="center">Frontend Mentor - Password Generator</h3>
+  <h3 align="center">Frontend Mentor Password Generator</h3>
 
   <p align="center">
-    Frontend Mentor challenge task - Password Generator
-    <br/>
-    <br/>
     <a href="https://frontendmentor-password-generator.vercel.app/">View Demo</a>
   </p>
 </p>
 
+
+
 ## About The Project
 
-Password generator, where it is possible to choose the length of the password up to 20 characters, the ability to include numbers, symbols, as well as uppercase and lowercase letters in the password. There is also a password strength indicator, as well as the ability to copy the password to the clipboard.
+Introducing our cutting-edge Password Generator - a robust tool designed to fortify your digital security effortlessly. With a user-centric approach, we've curated an experience that puts you in control of crafting passwords tailored to your needs.
 
-<br />
+### Features:
 
-<img src="https://i.ibb.co/nqyQP4P/2023-05-08-101923.png" />
+Customizable Length: Craft passwords of varying lengths, catering to your unique security preferences. Whether you seek a concise key or an elaborate passphrase, we've got you covered, with the upper limit set at 20 characters.
 
-<br />
+Comprehensive Character Set: Empower your passwords with layers of complexity. Handpick the elements you need, from digits and symbols to uppercase and lowercase letters, creating a robust cryptographic shield.
 
-<img src="https://i.ibb.co/WDjthrP/2023-05-08-101953.png" />
+Password Strength Gauge: Visualize the potency of your password in real time with our intuitive strength indicator. Gauge security levels instantly, allowing you to fine-tune your password until it's truly impervious.
 
-<br />
+Effortless Copy to Clipboard: Seamlessly copy your freshly minted password to the clipboard with a single click. No more tedious typing or retyping—our generator ensures quick access for immediate use.
 
-<img src="https://i.ibb.co/X3TDHbv/2023-05-08-102027.png" />
-
-<br />
+Enhanced Security: Elevate your defense against cyber threats, safeguarding your online accounts with the robust and unpredictable passwords generated through our state-of-the-art algorithm.
 
 ## Built With
 
 * React
-* SASS
 * TypeScript
+* SASS
 * check-password-strength
 * generate-password-browser
 
