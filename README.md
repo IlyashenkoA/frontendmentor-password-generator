@@ -9,7 +9,7 @@
 
 ## About The Project
 
-Introducing our cutting-edge Password Generator - a robust tool designed to fortify your digital security effortlessly. With a user-centric approach, we've curated an experience that puts you in control of crafting passwords tailored to your needs.
+Introducing the Password Generator, a robust tool engineered to bolster your digital security with ease. A user-centric design empowers you to customize passwords according to your requirements, placing you in control of your online safety.
 
 <img src="https://github.com/IlyashenkoA/frontendmentor-password-generator/assets/12977611/2c39131e-d8a9-46f7-8243-fbc51dd056d3" />
 <img src="https://github.com/IlyashenkoA/frontendmentor-password-generator/assets/12977611/40e0cef6-4ded-4b9e-a744-5df23d3d811b" />
