@@ -7,11 +7,16 @@
   </p>
 </p>
 
-
-
 ## About The Project
 
 Introducing our cutting-edge Password Generator - a robust tool designed to fortify your digital security effortlessly. With a user-centric approach, we've curated an experience that puts you in control of crafting passwords tailored to your needs.
+
+<img src="https://github.com/IlyashenkoA/frontendmentor-password-generator/assets/12977611/2c39131e-d8a9-46f7-8243-fbc51dd056d3" />
+<img src="https://github.com/IlyashenkoA/frontendmentor-password-generator/assets/12977611/40e0cef6-4ded-4b9e-a744-5df23d3d811b" />
+<img src="https://github.com/IlyashenkoA/frontendmentor-password-generator/assets/12977611/921591b9-1344-4fb3-b57b-641a51c7c7c6" />
+<img src="https://github.com/IlyashenkoA/frontendmentor-password-generator/assets/12977611/868f4424-50db-4daa-a0d1-17e86e3e7906" />
+<img src="https://github.com/IlyashenkoA/frontendmentor-password-generator/assets/12977611/95284a61-b39c-4a59-80c7-996bcb3537c8" />
+
 
 ### Features:
 
